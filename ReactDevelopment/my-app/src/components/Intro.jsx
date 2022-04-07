@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import AnimatedShapes from './AnimatedShapes'
+import How from './Image/how.jpg'
 const Container=styled.div`
     height: calc(100vh - 50px);
     display: flex;
@@ -53,6 +55,9 @@ const ContactText=styled.span`
     color: gray;
     margin-top: 5px;
 `;
+const Img=styled.img`
+    width: 100%;
+`;
 const Intro = () => {
   return (
     <Container>
@@ -71,7 +76,9 @@ const Intro = () => {
                 </Contact>
             </Info>
         </Left>
-        <Right>Right</Right>
+   <Right><Img src={How}></Img></Right>
+   <AnimatedShapes/>
+   
     </Container>
   )
 }
