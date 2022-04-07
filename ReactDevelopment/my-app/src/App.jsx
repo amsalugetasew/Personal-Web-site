@@ -1,13 +1,16 @@
 import styled from "styled-components"
+import NavBar from "./components/NavBar";
 const Container =styled.div`
     height: 100vh;
-    background-color: red;
+    // width: 300px;
+    // padding: 40px;
+    // background-color: red;
     `
 
 function App() {
   return (
     <Container>
-      Hello World!
+      <NavBar/>
     </Container>
   );
 }
