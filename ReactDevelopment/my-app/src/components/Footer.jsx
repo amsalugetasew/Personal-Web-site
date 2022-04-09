@@ -9,6 +9,9 @@ const Wrapper = styled.div`
 padding: 20px;
 display: flex;
 justify-content: space-between;
+@media only screen and ( max-width:480px){
+  padding: 10px;
+}
 `;
 const List = styled.ul`
 margin: 0;
@@ -18,8 +21,16 @@ display: flex;
 `;
 const ListItem = styled.li`
 margin-right: 20px;
+@media only screen and ( max-width:480px){
+  margin-right: 10px;
+  font-size: 14px;
+}
 `;
-const CopyRight = styled.span``;
+const CopyRight = styled.span`
+@media only screen and ( max-width:480px){
+  font-size: 14px;
+}
+`;
 const Footer = () => {
   return (
     <Container>

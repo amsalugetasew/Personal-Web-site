@@ -64,6 +64,7 @@ const Button=styled.button`
     cursor: pointer;
     @media only screen and ( max-width:480px){
         margin-bottom: 20px;
+        align-items: start;
       }
 `;
 const Contact=styled.div`

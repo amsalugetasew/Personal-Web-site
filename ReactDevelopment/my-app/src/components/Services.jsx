@@ -55,6 +55,9 @@ const Wrapper=styled.div`
 `;
 const Title=styled.h1`
     font-size: 70px;
+    @media only screen and ( max-width:480px){
+      font-size: 20px;
+    }
 `;
 const Desc=styled.p`
     font-size: 20px;
@@ -70,7 +73,7 @@ const Button=styled.button`
     width: 180px;
     border: none;
     border-radius: 10px;
-    background-color: darkgray;
+    background-color: darkblue;
     color: white;
     font-size: 20px;
     padding: 15px;

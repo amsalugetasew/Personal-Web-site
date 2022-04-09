@@ -38,6 +38,7 @@ const MenuItem=styled.li`
   font-size: 20px;
   font-weight: bold;
   color: gray;
+  cursor: pointer;
   @media only screen and ( max-width:480px){
     width: 100%;
     flex-direction: column;

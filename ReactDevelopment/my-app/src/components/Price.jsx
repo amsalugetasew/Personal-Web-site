@@ -8,10 +8,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     @media only screen and ( max-width:480px){
-      padding: 20px;
-      margin-top: 30px;
       width: 100%;
-      height: 60%;
     }
 `;
 const Price = () => {
