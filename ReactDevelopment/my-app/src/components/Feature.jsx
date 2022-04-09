@@ -1,11 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 import App from './Image/app.jpg'
+import AnimatedShapes from './AnimatedShapes'
 const Container =styled.div`
     display: flex;
+    @media only screen and ( max-width:480px){
+        flex-direction: column;
+      }
 `;
 const Left =styled.div`
     width: 50%;
+    @media only screen and ( max-width:480px){
+        display: none;
+        padding: 30px 20px;
+      }
 `;
 const Right =styled.div`
     width: 50%;
@@ -13,12 +21,21 @@ const Right =styled.div`
     flex-direction: column;
     justify-content: center;
     margin-top: 30px;
+    @media only screen and ( max-width:480px){
+        width: 100%;
+      }
 `;
 const Img=styled.img`
-    width: 80%;
+margin-top: 30px;
+margin-left: 30px;
+width: 60%;
+height: 70%;
 `;
 const Title=styled.span`
 font-size: 70px;
+@media only screen and ( max-width:480px){
+    font-size: 50px;;
+  }
 `;
 const SubTitle=styled.span`
 font-size: 24px;
@@ -53,6 +70,7 @@ const Feature = () => {
 CSS Animations and transitions are possible with two or more clip-path shapes with the same number of points.</Desc>
             <Button>Learn more...</Button>
         </Right>
+        <AnimatedShapes/>
     </Container>
   )
 }

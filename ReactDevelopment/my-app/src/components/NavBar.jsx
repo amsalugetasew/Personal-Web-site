@@ -25,12 +25,23 @@ text-decoration: underline crimson;
 const Menu=styled.ul`
 display: flex;
 list-style: none;
+// @media only screen and ( max-width:480px){
+//   display: none;
+// }
+@media only screen and ( max-width:480px){
+  width: 100%;
+  flex-direction: column;
+}
 `;
 const MenuItem=styled.li`
   margin-right: 30px;
   font-size: 20px;
   font-weight: bold;
   color: gray;
+  @media only screen and ( max-width:480px){
+    width: 100%;
+    flex-direction: column;
+  }
 `;
 const Button=styled.button`
 border: 2px solid white;
