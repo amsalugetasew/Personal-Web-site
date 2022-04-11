@@ -21,6 +21,7 @@ justify-content:space-between;
 const Logo=styled.h1`
 font-weight: bold;
 text-decoration: underline crimson;
+<<<<<<< HEAD
 `;
 const Menu=styled.ul`
 display: flex;
@@ -31,13 +32,40 @@ margin-right: 30px;
 font-size: 20px;
 font-width: bold;
 color: gray;
+=======
+`
+const Menu=styled.ul`
+display: flex;
+list-style: none;
+// @media only screen and ( max-width:480px){
+//   display: none;
+// }
+@media only screen and ( max-width:480px){
+  width: 100%;
+  flex-direction: column;
+}
+`;
+const MenuItem=styled.li`
+  margin-right: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: gray;
+  cursor: pointer;
+  @media only screen and ( max-width:480px){
+    width: 100%;
+    flex-direction: column;
+  }
+>>>>>>> 244d44c49338276e54804b240def9f22fc83c09c
 `;
 const Button=styled.button`
 border: 2px solid white;
 padding: 10px 15px;
 background-color: crimson;
+<<<<<<< HEAD
 color: white; 
 font-width: bold;
+=======
+>>>>>>> 244d44c49338276e54804b240def9f22fc83c09c
 border-radius: 10px;
 cursor: pointer;
 `;
@@ -46,12 +74,22 @@ const NavBar = () => {
     <Container>
       <Wrapper>
        <span><Logo>Agency</Logo></span> 
+<<<<<<< HEAD
        <Left><Menu>
        <MenuItem>Home</MenuItem>
        <MenuItem>Features</MenuItem>
        <MenuItem>Services</MenuItem>
        <MenuItem>Pricing</MenuItem>
        <MenuItem>Contact</MenuItem>
+=======
+       <Left>
+       <Menu>
+         <MenuItem>Home</MenuItem>
+         <MenuItem>Features</MenuItem>
+         <MenuItem>Services</MenuItem>
+         <MenuItem>Pricing</MenuItem>
+         <MenuItem>Contact</MenuItem>
+>>>>>>> 244d44c49338276e54804b240def9f22fc83c09c
        </Menu>
        </Left>
        <Button>JOIN NOW</Button> 
